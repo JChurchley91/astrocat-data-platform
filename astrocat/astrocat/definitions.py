@@ -1,9 +1,6 @@
-from dagster import Definitions, load_assets_from_modules
+from dagster import Definitions
+from astrocat.assets.bronze_assets import test_asset_1, test_asset_2
+from astrocat.jobs.bronze_jobs import asset_job_1, asset_job_2
 
-from astrocat import assets  # noqa: TID252
 
-all_assets = load_assets_from_modules([assets])
-
-defs = Definitions(
-    assets=all_assets,
-)
+defs = Definitions(assets=[test_asset_1, test_asset_2], jobs=[asset_job_1, asset_job_2])

@@ -2,7 +2,6 @@ README.md
 pyproject.toml
 setup.cfg
 setup.py
-astrocat/__init__.py
 astrocat/assets.py
 astrocat/definitions.py
 astrocat.egg-info/PKG-INFO
@@ -10,3 +9,5 @@ astrocat.egg-info/SOURCES.txt
 astrocat.egg-info/dependency_links.txt
 astrocat.egg-info/requires.txt
 astrocat.egg-info/top_level.txt
+astrocat/jobs/bronze_jobs/test_job.py
+astrocat/utils/test.py
